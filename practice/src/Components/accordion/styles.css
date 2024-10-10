@@ -1,0 +1,86 @@
+/* Estilos generales del acordeón */
+.accordion {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Estilos para cada ítem del acordeón */
+  .accordion .item {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion .item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Título del acordeón (la pregunta) */
+  .accordion .title h3{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: space-between; /* Para alinear el h3 y el span a los extremos */
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion .title:hover {
+    background-color: #e8f5e9; /* Un verde claro al pasar el mouse */
+  }
+  
+  /* Icono de despliegue */
+  .accordion .title span {
+    font-size: 20px;
+    color: #888;
+    transition: transform 0.3s ease;
+  }
+  
+
+  /* Contenido del acordeón (la respuesta) */
+  .accordion .content {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #fafafa;
+    color: #666;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .accordion .content {
+    max-height: 500px; /* Asegúrate de que sea lo suficientemente grande para el contenido */
+  }
+  
+  /* Efecto de transición suave al abrir el contenido */
+  .accordion .content {
+    padding: 15px;
+    background-color: #f1f8e9; /* Un fondo verde muy claro */
+  }
+  
+  /* Animación de icono */
+  .accordion .title:hover span {
+    color: #43a047;
+  }
+  
+  .accordion .content {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #fafafa;
+    color: #666;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    width: 100%; /* Añadido: Ocupa todo el ancho del contenedor */
+    box-sizing: border-box; /* Añadido: Considera el padding dentro del ancho total */
+    max-height: 500px; /* Asegúrate de que sea lo suficientemente grande para el contenido */
+    padding: 15px;
+    background-color: #f1f8e9; /* Fondo verde claro */
+  }
+  
